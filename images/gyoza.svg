@@ -1,0 +1,52 @@
+<svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="gyozaGrad" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" style="stop-color:#F5E6D3"/>
+      <stop offset="70%" style="stop-color:#E8D5B7"/>
+      <stop offset="100%" style="stop-color:#D4B896"/>
+    </radialGradient>
+    <radialGradient id="plateGrad" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" style="stop-color:#FFFFFF"/>
+      <stop offset="100%" style="stop-color:#F0F0F0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="300" height="200" fill="#F8F8F8"/>
+
+  <!-- Plate -->
+  <ellipse cx="150" cy="150" rx="130" ry="25" fill="url(#plateGrad)" stroke="#E0E0E0" stroke-width="1"/>
+
+  <!-- Gyoza dumplings -->
+  <g transform="translate(50, 80)">
+    <!-- First gyoza -->
+    <ellipse cx="40" cy="50" rx="35" ry="18" fill="url(#gyozaGrad)"/>
+    <path d="M5 50 Q20 35 40 35 Q60 35 75 50" fill="none" stroke="#C4A57B" stroke-width="2"/>
+    <circle cx="25" cy="45" r="1.5" fill="#B8956F" opacity="0.7"/>
+    <circle cx="55" cy="47" r="1" fill="#B8956F" opacity="0.5"/>
+
+    <!-- Second gyoza -->
+    <ellipse cx="100" cy="45" rx="35" ry="18" fill="url(#gyozaGrad)"/>
+    <path d="M65 45 Q80 30 100 30 Q120 30 135 45" fill="none" stroke="#C4A57B" stroke-width="2"/>
+    <circle cx="85" cy="40" r="1.5" fill="#B8956F" opacity="0.7"/>
+    <circle cx="115" cy="42" r="1" fill="#B8956F" opacity="0.5"/>
+
+    <!-- Third gyoza -->
+    <ellipse cx="160" cy="52" rx="35" ry="18" fill="url(#gyozaGrad)"/>
+    <path d="M125 52 Q140 37 160 37 Q180 37 195 52" fill="none" stroke="#C4A57B" stroke-width="2"/>
+    <circle cx="145" cy="47" r="1.5" fill="#B8956F" opacity="0.7"/>
+    <circle cx="175" cy="49" r="1" fill="#B8956F" opacity="0.5"/>
+  </g>
+
+  <!-- Steam effect -->
+  <g opacity="0.6">
+    <path d="M90 60 Q95 50 90 40 Q85 30 90 20" fill="none" stroke="#E8E8E8" stroke-width="2" opacity="0.8"/>
+    <path d="M150 55 Q155 45 150 35 Q145 25 150 15" fill="none" stroke="#E8E8E8" stroke-width="2" opacity="0.8"/>
+    <path d="M210 62 Q215 52 210 42 Q205 32 210 22" fill="none" stroke="#E8E8E8" stroke-width="2" opacity="0.8"/>
+  </g>
+
+  <!-- Garnish - sesame seeds -->
+  <circle cx="80" cy="140" r="1" fill="#F4E4BC"/>
+  <circle cx="120" cy="135" r="1" fill="#F4E4BC"/>
+  <circle cx="180" cy="142" r="1" fill="#F4E4BC"/>
+</svg>

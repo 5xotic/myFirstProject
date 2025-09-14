@@ -1,0 +1,77 @@
+<svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bowlGrad" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" style="stop-color:#2E2E2E"/>
+      <stop offset="100%" style="stop-color:#1C1C1C"/>
+    </radialGradient>
+    <radialGradient id="brothGrad" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" style="stop-color:#D4AF37"/>
+      <stop offset="50%" style="stop-color:#B8860B"/>
+      <stop offset="100%" style="stop-color:#996B1F"/>
+    </radialGradient>
+    <linearGradient id="noodleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFF8DC"/>
+      <stop offset="100%" style="stop-color:#F0E68C"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="300" height="200" fill="#F5F5F5"/>
+
+  <!-- Bowl shadow -->
+  <ellipse cx="150" cy="185" rx="90" ry="15" fill="#000000" opacity="0.1"/>
+
+  <!-- Bowl exterior -->
+  <ellipse cx="150" cy="130" rx="80" ry="50" fill="url(#bowlGrad)"/>
+
+  <!-- Bowl interior / broth -->
+  <ellipse cx="150" cy="125" rx="70" ry="42" fill="url(#brothGrad)"/>
+
+  <!-- Broth surface ripples -->
+  <ellipse cx="150" cy="115" rx="60" ry="6" fill="none" stroke="#E6C547" stroke-width="1" opacity="0.5"/>
+  <ellipse cx="150" cy="120" rx="45" ry="4" fill="none" stroke="#E6C547" stroke-width="1" opacity="0.3"/>
+
+  <!-- Noodles -->
+  <g opacity="0.9">
+    <path d="M110 120 Q130 115 140 125 Q155 135 170 120 Q180 110 190 125"
+          fill="none" stroke="url(#noodleGrad)" stroke-width="3"/>
+    <path d="M105 125 Q125 120 135 130 Q150 140 165 125 Q175 115 185 130"
+          fill="none" stroke="url(#noodleGrad)" stroke-width="3"/>
+    <path d="M115 130 Q135 125 145 135 Q160 145 175 130 Q185 120 195 135"
+          fill="none" stroke="url(#noodleGrad)" stroke-width="3"/>
+  </g>
+
+  <!-- Chashu (pork slices) -->
+  <ellipse cx="130" cy="120" rx="12" ry="8" fill="#8D4E2A"/>
+  <ellipse cx="130" cy="120" rx="8" ry="5" fill="#A0522D"/>
+  <ellipse cx="170" cy="125" rx="12" ry="8" fill="#8D4E2A"/>
+  <ellipse cx="170" cy="125" rx="8" ry="5" fill="#A0522D"/>
+
+  <!-- Soft-boiled egg -->
+  <ellipse cx="150" cy="115" rx="8" ry="6" fill="#FFF8DC"/>
+  <ellipse cx="150" cy="115" rx="4" ry="3" fill="#FFD700"/>
+
+  <!-- Green onions -->
+  <rect x="140" y="110" width="2" height="8" fill="#4CAF50"/>
+  <rect x="155" y="108" width="2" height="10" fill="#4CAF50"/>
+  <rect x="165" y="112" width="2" height="6" fill="#4CAF50"/>
+
+  <!-- Nori (seaweed) -->
+  <rect x="135" y="118" width="8" height="6" fill="#1B4332" opacity="0.8"/>
+
+  <!-- Corn kernels -->
+  <circle cx="160" cy="130" r="1.5" fill="#FFD54F"/>
+  <circle cx="165" cy="132" r="1.5" fill="#FFD54F"/>
+  <circle cx="157" cy="134" r="1.5" fill="#FFD54F"/>
+
+  <!-- Steam -->
+  <g opacity="0.6">
+    <path d="M120 80 Q125 70 120 60 Q115 50 120 40" fill="none" stroke="#E8E8E8" stroke-width="2"/>
+    <path d="M150 75 Q155 65 150 55 Q145 45 150 35" fill="none" stroke="#E8E8E8" stroke-width="2"/>
+    <path d="M180 85 Q185 75 180 65 Q175 55 180 45" fill="none" stroke="#E8E8E8" stroke-width="2"/>
+  </g>
+
+  <!-- Chopsticks -->
+  <line x1="220" y1="60" x2="280" y2="120" stroke="#8D6E63" stroke-width="3"/>
+  <line x1="225" y1="65" x2="285" y2="125" stroke="#8D6E63" stroke-width="3"/>
+</svg>

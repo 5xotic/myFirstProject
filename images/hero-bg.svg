@@ -1,0 +1,41 @@
+<svg width="1200" height="600" viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="heroGrad" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" style="stop-color:#2D1B17;stop-opacity:0.9"/>
+      <stop offset="100%" style="stop-color:#1A0F0D;stop-opacity:0.95"/>
+    </radialGradient>
+    <pattern id="bamboo" patternUnits="userSpaceOnUse" width="40" height="80" patternTransform="rotate(15)">
+      <rect width="40" height="80" fill="#2D1B17" opacity="0.1"/>
+      <path d="M20 0 L20 80" stroke="#4A6741" stroke-width="2" opacity="0.3"/>
+      <circle cx="20" cy="20" r="1.5" fill="#4A6741" opacity="0.4"/>
+      <circle cx="20" cy="60" r="1.5" fill="#4A6741" opacity="0.4"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#heroGrad)"/>
+  <rect width="1200" height="600" fill="url(#bamboo)"/>
+
+  <!-- Cherry blossom branches -->
+  <g opacity="0.6">
+    <path d="M0 100 Q200 80 400 120 Q600 140 800 100 Q1000 80 1200 110"
+          fill="none" stroke="#8B4B5A" stroke-width="3"/>
+    <path d="M0 200 Q300 180 600 200 Q900 220 1200 190"
+          fill="none" stroke="#8B4B5A" stroke-width="2"/>
+
+    <!-- Cherry blossoms -->
+    <g fill="#F4C2C2" opacity="0.8">
+      <circle cx="150" cy="95" r="4"/>
+      <circle cx="350" cy="115" r="3"/>
+      <circle cx="550" cy="135" r="4"/>
+      <circle cx="750" cy="105" r="3"/>
+      <circle cx="950" cy="85" r="4"/>
+      <circle cx="250" cy="195" r="3"/>
+      <circle cx="450" cy="205" r="4"/>
+      <circle cx="650" cy="195" r="3"/>
+      <circle cx="850" cy="215" r="4"/>
+    </g>
+  </g>
+
+  <!-- Subtle texture overlay -->
+  <rect width="1200" height="600" fill="url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8Y2lyY2xlIGN4PSIxIiBjeT0iMSIgcj0iMSIgZmlsbD0iIzMzMzMzMyIgb3BhY2l0eT0iMC4xIi8+Cjwvc3ZnPg==)" opacity="0.3"/>
+</svg>

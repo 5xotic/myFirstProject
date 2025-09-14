@@ -1,0 +1,77 @@
+<svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="souffleGrad" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" style="stop-color:#C8E6C9"/>
+      <stop offset="50%" style="stop-color:#A5D6A7"/>
+      <stop offset="100%" style="stop-color:#81C784"/>
+    </radialGradient>
+    <radialGradient id="iceCreamGrad" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" style="stop-color:#FFEBEE"/>
+      <stop offset="100%" style="stop-color:#F8BBD9"/>
+    </radialGradient>
+    <radialGradient id="plateGrad4" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" style="stop-color:#FFFFFF"/>
+      <stop offset="100%" style="stop-color:#F5F5F5"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="300" height="200" fill="#F8F8F8"/>
+
+  <!-- Plate -->
+  <ellipse cx="150" cy="160" rx="120" ry="25" fill="url(#plateGrad4)" stroke="#E0E0E0" stroke-width="1"/>
+
+  <!-- Soufflé -->
+  <g transform="translate(150, 120)">
+    <!-- Base -->
+    <ellipse cx="0" cy="25" rx="35" ry="15" fill="#7CB342"/>
+
+    <!-- Main body -->
+    <ellipse cx="0" cy="10" rx="40" ry="25" fill="url(#souffleGrad)"/>
+
+    <!-- Top highlight -->
+    <ellipse cx="0" cy="5" rx="35" ry="8" fill="#E8F5E8" opacity="0.6"/>
+
+    <!-- Texture lines -->
+    <path d="M-25 10 Q0 5 25 10" fill="none" stroke="#7CB342" stroke-width="1" opacity="0.5"/>
+    <path d="M-30 15 Q0 10 30 15" fill="none" stroke="#7CB342" stroke-width="1" opacity="0.4"/>
+    <path d="M-20 20 Q0 15 20 20" fill="none" stroke="#7CB342" stroke-width="1" opacity="0.3"/>
+  </g>
+
+  <!-- Red bean ice cream scoop -->
+  <g transform="translate(200, 130)">
+    <ellipse cx="0" cy="0" rx="18" ry="15" fill="url(#iceCreamGrad)"/>
+    <ellipse cx="0" cy="-3" rx="15" ry="8" fill="#FFCDD2" opacity="0.8"/>
+
+    <!-- Ice cream texture -->
+    <circle cx="-5" cy="-2" r="1" fill="#F48FB1" opacity="0.6"/>
+    <circle cx="3" cy="1" r="1" fill="#F48FB1" opacity="0.6"/>
+    <circle cx="0" cy="-5" r="1" fill="#F48FB1" opacity="0.4"/>
+  </g>
+
+  <!-- Matcha powder dusting -->
+  <g opacity="0.4">
+    <circle cx="130" cy="110" r="1" fill="#7CB342"/>
+    <circle cx="170" cy="105" r="0.8" fill="#7CB342"/>
+    <circle cx="140" cy="125" r="0.6" fill="#7CB342"/>
+    <circle cx="180" cy="115" r="1" fill="#7CB342"/>
+    <circle cx="160" cy="95" r="0.8" fill="#7CB342"/>
+  </g>
+
+  <!-- Mint leaf garnish -->
+  <g transform="translate(120, 115)">
+    <ellipse cx="0" cy="0" rx="4" ry="8" fill="#4CAF50"/>
+    <path d="M0 -8 Q2 -4 0 0 Q-2 -4 0 -8" fill="#66BB6A"/>
+    <line x1="0" y1="-8" x2="0" y2="8" stroke="#388E3C" stroke-width="0.5"/>
+  </g>
+
+  <!-- Steam effect -->
+  <g opacity="0.5">
+    <path d="M140 90 Q145 80 140 70" fill="none" stroke="#E8E8E8" stroke-width="1.5"/>
+    <path d="M160 85 Q165 75 160 65" fill="none" stroke="#E8E8E8" stroke-width="1.5"/>
+    <path d="M150 88 Q155 78 150 68" fill="none" stroke="#E8E8E8" stroke-width="1.5"/>
+  </g>
+
+  <!-- Plate shine -->
+  <ellipse cx="150" cy="155" rx="90" ry="12" fill="#FFFFFF" opacity="0.4"/>
+</svg>
