@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakura - Authentic Japanese Cuisine</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>桜 Sakura</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button class="theme-toggle" id="themeToggle">
+                    <span class="theme-icon">🌙</span>
+                </button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Experience Authentic Japanese Flavors</h1>
+            <p>Where tradition meets innovation in every dish</p>
+            <button class="cta-button">View Menu</button>
+        </div>
+        <div class="hero-image">
+            <div class="cherry-blossom"></div>
+        </div>
+    </section>
+
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="appetizers">前菜 Appetizers</button>
+                <button class="category-btn" data-category="sushi">寿司 Sushi</button>
+                <button class="category-btn" data-category="ramen">ラーメン Ramen</button>
+                <button class="category-btn" data-category="mains">メイン Mains</button>
+                <button class="category-btn" data-category="desserts">デザート Desserts</button>
+            </div>
+
+            <div class="menu-items">
+                <div class="menu-category" id="appetizers">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Gyoza Deluxe</h3>
+                            <p>Pan-fried pork dumplings with black garlic sauce</p>
+                        </div>
+                        <span class="price">$12</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Takoyaki Trio</h3>
+                            <p>Octopus balls with bonito flakes and spicy mayo</p>
+                        </div>
+                        <span class="price">$14</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Edamame Truffle</h3>
+                            <p>Steamed soybeans with truffle salt and sesame</p>
+                        </div>
+                        <span class="price">$8</span>
+                    </div>
+                </div>
+
+                <div class="menu-category hidden" id="sushi">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Dragon Roll</h3>
+                            <p>Eel, cucumber, topped with avocado and eel sauce</p>
+                        </div>
+                        <span class="price">$18</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Rainbow Sashimi</h3>
+                            <p>Assorted fresh fish over seasoned rice</p>
+                        </div>
+                        <span class="price">$24</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Uni Treasure</h3>
+                            <p>Premium sea urchin with quail egg</p>
+                        </div>
+                        <span class="price">$28</span>
+                    </div>
+                </div>
+
+                <div class="menu-category hidden" id="ramen">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Tonkotsu Black</h3>
+                            <p>Rich pork bone broth with black garlic oil</p>
+                        </div>
+                        <span class="price">$16</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Miso Fire</h3>
+                            <p>Spicy miso broth with ground pork and corn</p>
+                        </div>
+                        <span class="price">$15</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Seafood Storm</h3>
+                            <p>Clear broth with shrimp, scallops, and fish cake</p>
+                        </div>
+                        <span class="price">$19</span>
+                    </div>
+                </div>
+
+                <div class="menu-category hidden" id="mains">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Wagyu Tataki</h3>
+                            <p>Seared A5 wagyu with ponzu and microgreens</p>
+                        </div>
+                        <span class="price">$45</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Teriyaki Salmon</h3>
+                            <p>Grilled salmon with house teriyaki glaze</p>
+                        </div>
+                        <span class="price">$22</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Katsu Curry</h3>
+                            <p>Panko-crusted pork with Japanese curry</p>
+                        </div>
+                        <span class="price">$18</span>
+                    </div>
+                </div>
+
+                <div class="menu-category hidden" id="desserts">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Matcha Soufflé</h3>
+                            <p>Light matcha soufflé with red bean ice cream</p>
+                        </div>
+                        <span class="price">$12</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Mochi Selection</h3>
+                            <p>Three seasonal mochi with yuzu sauce</p>
+                        </div>
+                        <span class="price">$10</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Black Sesame Crème</h3>
+                            <p>Silky black sesame custard with gold leaf</p>
+                        </div>
+                        <span class="price">$9</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <h2>Our Story</h2>
+                <p>Founded in the heart of the city, Sakura brings authentic Japanese flavors with a modern twist. Our master chefs combine traditional techniques with innovative presentations to create an unforgettable dining experience.</p>
+                <p>Every dish is crafted with the finest ingredients, sourced directly from Japan and local artisans who share our passion for excellence.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Visit Us</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>Location</h3>
+                    <p>123 Cherry Blossom Lane<br>Downtown District<br>City, State 12345</p>
+                </div>
+                <div class="contact-item">
+                    <h3>Hours</h3>
+                    <p>Monday - Thursday: 5:00 PM - 10:00 PM<br>
+                    Friday - Saturday: 5:00 PM - 11:00 PM<br>
+                    Sunday: 4:00 PM - 9:00 PM</p>
+                </div>
+                <div class="contact-item">
+                    <h3>Reservations</h3>
+                    <p>Phone: (555) 123-SAKE<br>
+                    Email: reservations@sakura.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
